@@ -13114,7 +13114,7 @@ nav .navbar-nav div {
 }
 nav .navbar-nav .nav-link {
   color: #212529;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   text-transform: capitalize;
   border-bottom: 4px solid transparent;
@@ -13579,7 +13579,7 @@ nav .nav-cta-div .nav-cta:hover {
   text-transform: capitalize;
   color: #f8f8f8;
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-  font-weight: 600;
+  font-weight: 400;
   font-size: 52px;
   line-height: 60px;
   margin-bottom: 2.5rem;
@@ -13779,7 +13779,7 @@ nav .nav-cta-div .nav-cta:hover {
   font-weight: 400;
   margin-bottom: 0.5rem;
 }
-.services .flex .column a {
+.services .flex .column .read-more {
   color: #db6b24;
   font-size: 16px;
   font-weight: 500;
@@ -13960,6 +13960,203 @@ nav .nav-cta-div .nav-cta:hover {
   color: #0c5b84;
   margin-top: 2rem;
   text-decoration: underline !important;
+}
+
+.development-process .main-layout {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+}
+.development-process .main-layout::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  height: 85%;
+  border: 5px solid #0c5b84;
+  border-radius: 50%;
+  opacity: 0.15;
+  z-index: -1;
+}
+.development-process .main-layout .circle {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 5px solid #0c5b84;
+  color: #0c5b84;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+.development-process .main-layout .circle.active {
+  background-color: #0c5b84;
+  color: #f8f8f8;
+  border-color: #0c5b84;
+}
+.development-process .main-layout .circle:nth-child(1) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg) translate(250px) rotate(-0deg);
+}
+.development-process .main-layout .circle:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(0deg) translate(250px) rotate(0deg);
+}
+.development-process .main-layout .circle:nth-child(2) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(60deg) translate(250px) rotate(-60deg);
+}
+.development-process .main-layout .circle:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(0deg) translate(250px) rotate(0deg);
+}
+.development-process .main-layout .circle:nth-child(3) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(120deg) translate(250px) rotate(-120deg);
+}
+.development-process .main-layout .circle:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(0deg) translate(250px) rotate(0deg);
+}
+.development-process .main-layout .circle:nth-child(4) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(180deg) translate(250px) rotate(-180deg);
+}
+.development-process .main-layout .circle:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(0deg) translate(250px) rotate(0deg);
+}
+.development-process .main-layout .circle:nth-child(5) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(240deg) translate(250px) rotate(-240deg);
+}
+.development-process .main-layout .circle:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(0deg) translate(250px) rotate(0deg);
+}
+.development-process .main-layout .circle:nth-child(6) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(300deg) translate(250px) rotate(-300deg);
+}
+.development-process .main-layout .circle:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(0deg) translate(250px) rotate(0deg);
+}
+.development-process .main-layout .description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+  z-index: 10;
+  width: 200px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .development-process .main-layout {
+    max-width: 300px;
+    height: 300px;
+  }
+  .development-process .circle {
+    width: 80px;
+    height: 80px;
+  }
+  .development-process .circle i {
+    font-size: 36px;
+  }
+  .development-process .circle:nth-child(1) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg) translate(180px) rotate(-0deg);
+  }
+  .development-process .circle:nth-child(2) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(60deg) translate(180px) rotate(-60deg);
+  }
+  .development-process .circle:nth-child(3) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(120deg) translate(180px) rotate(-120deg);
+  }
+  .development-process .circle:nth-child(4) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(180deg) translate(180px) rotate(-180deg);
+  }
+  .development-process .circle:nth-child(5) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(240deg) translate(180px) rotate(-240deg);
+  }
+  .development-process .circle:nth-child(6) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(300deg) translate(180px) rotate(-300deg);
+  }
+  .development-process .description {
+    width: 150px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .development-process .main-layout {
+    max-width: 200px;
+    height: 200px;
+  }
+  .development-process .circle {
+    width: 60px;
+    height: 60px;
+  }
+  .development-process .circle i {
+    font-size: 24px;
+  }
+  .development-process .circle:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(0deg) translate(90px) rotate(-0deg);
+  }
+  .development-process .circle:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(60deg) translate(90px) rotate(-60deg);
+  }
+  .development-process .circle:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(120deg) translate(90px) rotate(-120deg);
+  }
+  .development-process .circle:nth-child(4) {
+    transform: translate(-50%, -50%) rotate(180deg) translate(90px) rotate(-180deg);
+  }
+  .development-process .circle:nth-child(5) {
+    transform: translate(-50%, -50%) rotate(240deg) translate(90px) rotate(-240deg);
+  }
+  .development-process .circle:nth-child(6) {
+    transform: translate(-50%, -50%) rotate(300deg) translate(90px) rotate(-300deg);
+  }
+  .development-process .description {
+    width: 120px;
+    font-size: 14px;
+  }
+}
+
+.roadmap .flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.roadmap .flex .item {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .our-expertise {

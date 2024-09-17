@@ -669,28 +669,28 @@ window.addEventListener('load', function () {
       imgSection.style.height = `${infoHeight}px`;
     });
   }
-}); 
+});
 let showAll = true;
 
 function toggleReviews() {
-    showAll = !showAll;
+  showAll = !showAll;
 
-    const reviews = document.querySelectorAll('.review');
-    const showMoreBtn = document.querySelector('.show-more-btn');
+  const reviews = document.querySelectorAll('.review');
+  const showMoreBtn = document.querySelector('.show-more-btn');
 
-    reviews.forEach((review, index) => {
-        if (showAll || index < 10) {
-            review.style.display = 'block';
-        } else {
-            review.style.display = 'none';
-        }
-    });
-
-    if (showAll) {
-        showMoreBtn.textContent = 'Show Less';
+  reviews.forEach((review, index) => {
+    if (showAll || index < 10) {
+      review.style.display = 'block';
     } else {
-        showMoreBtn.textContent = 'Show All';
+      review.style.display = 'none';
     }
+  });
+
+  if (showAll) {
+    showMoreBtn.textContent = 'Show Less';
+  } else {
+    showMoreBtn.textContent = 'Show All';
+  }
 }
 
 
@@ -744,4 +744,39 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   toggleReviews();
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const circles = document.querySelectorAll('.circle');
+  const description = document.querySelector('.description');
+
+  function activatePhase(index) {
+    circles.forEach((circle, i) => {
+      circle.classList.remove('active');
+      if (i <= index) {
+        circle.classList.add('active');
+      }
+    });
+
+    const phaseText = circles[index].getAttribute('data-phase');
+    description.textContent = phaseText;
+    description.style.display = 'block';
+  }
+
+  // Activate Phase 1 initially
+  activatePhase(0);
+
+  circles.forEach((circle, index) => {
+    circle.addEventListener('click', function() {
+      activatePhase(index);
+    });
+  });
+
+  // Optional: Hide the description when clicking outside
+  document.addEventListener('click', function(event) {
+    if (!event.target.closest('.circle') && !event.target.closest('.description')) {
+      description.style.display = 'none';
+    }
+  });
 });
