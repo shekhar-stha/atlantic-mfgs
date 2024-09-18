@@ -6,11 +6,10 @@ nav {
     width: 100%;
     height: fit-content;
     background-color: $white;
-    padding: 0 !important;
 
 
     @media (max-width: 1200px) {
-        padding: 16px 0;
+        padding: 20px 0;
         background: none;
         background-color: $white;
     }
@@ -31,7 +30,7 @@ nav {
 
         .nav-link {
             color: $dark;
-            font-size: 18px;
+            font-size: 17px;
             font-weight: 500;
             text-transform: capitalize;
             border-bottom: 4px solid transparent;
@@ -82,7 +81,7 @@ nav {
 }
 
 .logo {
-    width: 19rem;
+    width: 17rem;
     margin: 1rem 0;
     z-index: 10;
     position: relative;
@@ -92,8 +91,8 @@ nav {
     }
 
     @media (max-width: 1200px) {
-        width: 10rem;
-        max-width: 10rem;
+        width: 14rem;
+        max-width: 14rem;
         z-index: inherit;
         margin-top: 0;
     }
