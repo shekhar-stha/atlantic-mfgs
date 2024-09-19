@@ -97,3 +97,20 @@ nav {
         margin-top: 0;
     }
 }
+
+
+.stacked-nav{
+    background-color: $dark;
+
+    @media (max-width: 1200px) {
+        display: none;
+    }
+    
+    ul{
+        padding: 0.5rem 0;
+        gap: 2.5rem;
+        li{
+            color: $white;
+        }
+    }
+}

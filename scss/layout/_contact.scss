@@ -1,7 +1,7 @@
 .contact-bars {
     .flex {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         min-height: 15rem;
         gap: 0;
         border-radius: 12px;
@@ -23,7 +23,7 @@
             padding: 2rem 1rem;
 
             &:nth-of-type(even) {
-                background-color: #d61c1c;
+                background-color: #0e4f72;
             }
 
             &:nth-of-type(odd) {
