@@ -15751,6 +15751,40 @@ footer .footer-col .text-info p a {
   margin-right: 0.2rem;
 }
 
+.about-us.contact {
+  background-color: #f8f8f8;
+  padding-top: 1rem;
+}
+.about-us.contact .about-us-flex {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.about-us.contact .info-div {
+  min-height: 30rem;
+  width: 65%;
+  padding: 2rem 3rem;
+}
+@media (max-width: 992px) {
+  .about-us.contact .info-div {
+    width: 100%;
+    min-height: inherit;
+  }
+}
+.about-us.contact .img-div {
+  width: 30%;
+}
+.about-us.contact .img-div::after {
+  display: none;
+}
+@media (max-width: 992px) {
+  .about-us.contact .img-div {
+    display: none;
+  }
+}
+.about-us.contact .img-div img {
+  width: 100%;
+  border-radius: 0px;
+}
+
 .contact-section {
   background-color: #f8f8f8;
 }
