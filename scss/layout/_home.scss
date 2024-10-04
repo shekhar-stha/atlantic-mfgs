@@ -211,7 +211,7 @@
     width: 100%;
     font-size: 1.5rem;
     line-height: 1.5;
-    padding: 4rem 0;
+    padding: 4rem 0 2rem;
 
     .marquee {
         --duration: 65s;
@@ -243,8 +243,9 @@
             img {
                 max-width: 12rem;
                 object-fit: contain;
-                filter: contrast(1);
                 mix-blend-mode: multiply;
+                filter: grayscale(1);
+                max-height: 5rem;
 
             }
         }
